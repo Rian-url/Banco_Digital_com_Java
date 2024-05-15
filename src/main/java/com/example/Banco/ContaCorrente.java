@@ -1,20 +1,9 @@
 package com.example.Banco;
 
-public class ContaCorrente {
+public class ContaCorrente extends Conta {
 
-    private int agencia;
-    private String nome;
-    private Double saldo;
-
-    public int getAgencia() {
-        return agencia;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public Double getSaldo() {
-        return saldo;
-    }
+      public ContaCorrente(Cliente cliente){
+          super(cliente);
+          System.out.println("Conta Corrente criada com sucesso");
+      }
 }

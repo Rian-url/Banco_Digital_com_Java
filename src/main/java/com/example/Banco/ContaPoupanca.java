@@ -1,19 +1,10 @@
 package com.example.Banco;
 
-public class ContaPoupanca {
-    private int agencia;
-    private String nome;
-    private Double saldo;
+public class ContaPoupanca extends Conta {
 
-    public int getAgencia() {
-        return agencia;
+   public ContaPoupanca(Cliente cliente){
+        super(cliente);
+       System.out.println("Conta Poupança criada com sucesso");
     }
 
-    public String getNome() {
-        return nome;
-    }
-
-    public Double getSaldo() {
-        return saldo;
-    }
 }
